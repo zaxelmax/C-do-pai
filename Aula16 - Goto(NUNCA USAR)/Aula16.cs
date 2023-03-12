@@ -39,7 +39,7 @@ class Aula15
         }
         Console.WriteLine("Digita s ou S ai");
         char b = char.Parse(Console.ReadLine());
-        if (b == 's' || b == 'S')
+        if (b == 's' && b == 'S')
         {
 
 
