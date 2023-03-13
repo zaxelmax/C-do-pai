@@ -4,7 +4,7 @@ namespace dados
 {
     public class Valores
     {
-        const string[] index =
+        string[] index =
         {
             "Id",
             "Quilometragem",
