@@ -4,6 +4,7 @@ public class Aula24
 {
     static void Main()
     {
+        int a =  double.Parse(9);
         int v1 = int.Parse(Console.ReadLine()), v2 = int.Parse(Console.ReadLine());
 
         impressao(SomaValor(v1, v2));
