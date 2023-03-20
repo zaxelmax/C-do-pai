@@ -4,12 +4,12 @@ public class Veiculo{//base
 
     public int rodas;
     public int eixos;
-    public bool ligado;
+    protected bool ligado;
 
     public Veiculo(int rodas,int eixos){
-        this.rodas = a;  
-        this.eixos = b;
-        ligado = true;
+        this.rodas = rodas;  
+        this.eixos = eixos;
+        ligado = false;
     }
 }
 
@@ -21,24 +21,27 @@ public class Carro:Veiculo{
         this.nome = nome;
         this.cor = cor;
     }
+    
+        public bool getLigado(){
+           return ligado;
+        }
 }
 public class Aula36{
     static void Main(){
 
-        Carro c1 = new Carro();
+       
 
         Console.WriteLine("Insira o nome do carro:");
-        c1.nome=Console.ReadLine();
+        string a=Console.ReadLine();
         
         Console.WriteLine("Insira a cor do carro:");
-        
-      
-
+        string b = Console.ReadLine();
+         Carro c1 = new Carro(a,b,2,3);
         Console.WriteLine("O carro possui nome : {0}",c1.nome);
-        Console.WriteLine("O carro possui cor  : {0}",c1.cor());
-        Console.WriteLine("O carro possui {0} rodas",c1.rodas());
+        Console.WriteLine("O carro possui cor  : {0}",c1.cor);
+        Console.WriteLine("O carro possui {0} rodas",c1.rodas);
         Console.WriteLine("O carro possui {0} eixos",c1.eixos);
-        Console.WriteLine("O carro está ligado? {0}:",c1.ligado);
+        Console.WriteLine("O carro está ligado? {0}",c1.getLigado());
 
 
 
