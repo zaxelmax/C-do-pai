@@ -12,7 +12,7 @@ public interface Combate
     void disparar();
 }
 
-class Carro : Veiculo
+class Carro : Veiculo,Combate
 {
     private bool ligado;
     public string estado;
@@ -41,6 +41,9 @@ class Carro : Veiculo
             estado = "Desligado";
             Console.WriteLine(estado);
         }
+    }
+    public void disparar(){
+        
     }
 }
 
