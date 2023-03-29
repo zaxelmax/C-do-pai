@@ -21,7 +21,7 @@ class Carro{
     }
 }
 
-class Aula41{
+class Aula42{
     static void Main(){
         Carro c1 = new Carro();
         c1[4] = 123;
