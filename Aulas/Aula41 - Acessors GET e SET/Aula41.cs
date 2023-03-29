@@ -17,13 +17,14 @@ class Carro{
         }
     }
     public Carro(){
-        this.velMax=400;
+        this.velMax=120;
     }
 }
 
 class Aula41{
     static void Main(){
         Carro c1 = new Carro();
+        c1.vm = -1112;
         Console.WriteLine("Velocidade:{0}",c1.vm);
 
     }
