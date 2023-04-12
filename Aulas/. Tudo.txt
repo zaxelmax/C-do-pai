@@ -1,0 +1,31 @@
+Yo.
+Compilado de todos os conteúdos trabalhados até agora.
+Basicamente, todas as aulas serão separadas aqui e explcadas.
+O formato será:
+
+//Título da Aula
+Definição / Explicação do conteúdo abordado
+Importância e usos.
+
+------------------------------------------------------------------
+|                                                                |
+|                                                                |
+|                                                                |
+|                                                                |
+|                                                                |
+|                                                                |
+------------------------------------------------------------------
+
+
+|||||Aula 01 : Introdução e Instalação.|||||
+Aprendemos como ajustar as variáveis de ambiente, usar o vs code e mexer no terminal.
+Introduzimos o Hello, World!
+
+|||||Aula 02 : Criando um programa .Net|||||
+Ainda não foi muito útil, pois eu não estou com foco em .Net por enquanto.
+Criamos um programa .Net usando o terminal.
+
+|||||Aula 04 : Escopo de variáveis|||||
+Vou colocar aqui também o da aula 03, que foi a aula sobre variáveis.
+
+Os tipos de variáveis integrais que existem em C# são:

@@ -43,9 +43,5 @@ public class Aula36{
         Console.WriteLine("O carro possui {0} eixos",c1.eixos);
         Console.WriteLine("O carro está ligado? {0}",c1.getLigado());
 
-
-
-
-
     }
 }
