@@ -64,6 +64,8 @@ Conceitos básicos como sinais de operação e controle de valores das variávei
 Existem alguns formatadores para as saídas.
 /n quebra a linha, /t insere uma tabulação.
 {U}, U ∈ N, representa a posição da variável que será impressa na tela.
+{U,X}, com U ∈ N e X ∈ N, representam a variável impressa + uma quantidade
+X de espaços dados. Ótimo para organizar o código. 
 Existem DEZENAS de modificadores para isto, seguem abaixo:
 
   -----------------------------------------------------------------------------------
@@ -150,6 +152,21 @@ Standard Enumeration Format Specifiers
 (D) Decimal number: . . . . . 3
 (X) Hexadecimal:. . . . . . . 00000003
 
+~~~~ Aula 07 : Constantes ~~~~
 
+Existe a possibilidade de guardar espaços de memória com valores
+que não vão mudar durante o código.
+Esses valores são as Constantes.
+Salvar um valor com a garantia de que ele não será mudado, não importa o quê
+é muito importante da perspectiva geral de um projeto.
+Note que constantes possuem valor determinado em tempo de compilação, não de execução.
+Costuma-se chamar variáveis somente leitura de constantes, mas como
+sua definição ocorre em tempo de execução elas não são constantes propriamente ditas.
 
+As constantes não devem ser confundidas com literais.
+Literais são valores imutáveis, mas que não precisam ser atribuidos.
+Eles simplesmente existem, como o número 8.2f.
 
+A constate não existe naturalmente, já o literal, sim.
+
+    
