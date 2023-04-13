@@ -11,7 +11,7 @@ namespace Aprendendo
            string produto= "Melan";
 
            venda = Compra+(Compra*lucro);
-           Console.WriteLine("Produto.......:{0,15}\nCompra........:{1,15:c}\nLucro.........:{2,15:p}\nVenda.........:{3,15:c}",produto, Compra, lucro, venda);
+           Console.WriteLine("Produto.......:{0,20}\nCompra........:{1,15:c}\nLucro.........:{2,15:p}\nVenda.........:{3,15:c}",produto, Compra, lucro, venda);
         }
     }
 }

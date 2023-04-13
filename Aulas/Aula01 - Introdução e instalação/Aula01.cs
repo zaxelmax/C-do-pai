@@ -1,7 +1,8 @@
 using System;
 class Principal{
     static void Main(){
-        Console.Write("Hello World!");
+        int numb = 20;
+        Console.Write("{0:E}",numb);
 
     }
 }
