@@ -167,6 +167,26 @@ As constantes não devem ser confundidas com literais.
 Literais são valores imutáveis, mas que não precisam ser atribuidos.
 Eles simplesmente existem, como o número 8.2f.
 
-A constate não existe naturalmente, já o literal, sim.
+A constante não existe naturalmente, já o literal, sim.
 
-    
+~~~~ Aula 08 : Console Read / ReadLine~~~~
+
+O console Read é um método que lê o próximo caractere que for inserido no fluxo de entrada
+padrão. Ele, por default, lê um tipo Char. 
+
+Já o Console.ReadLine, por sua vez, lê a linha de caracteres que for inserido no fluxo de entrada.
+
+~~~~ Aula 09 : Operações em BitWise~~~~
+
+Vou ser bem sério, relativamente inútil por um bom tempo.
+Basicamente são Operadores para alterar os binários inseridos.
+
+Servem para dar um shift para a esquerda ou para a direita nos binários.
+Útil para compressão e criptografia de arquivos.
+
+~~~~ Aula 10 : ENUM~~~~
+
+Enum's são tipos enumeradores.
+Eles servem, num geral, para salvar constantes.
+
+
