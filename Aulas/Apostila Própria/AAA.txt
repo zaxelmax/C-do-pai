@@ -188,5 +188,3 @@ Servem para dar um shift para a esquerda ou para a direita nos binários.
 
 Enum's são tipos enumeradores.
 Eles servem, num geral, para salvar constantes.
-
-
