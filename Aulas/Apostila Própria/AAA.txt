@@ -187,4 +187,22 @@ Servem para dar um shift para a esquerda ou para a direita nos binários.
 ~~~~ Aula 10 : ENUM~~~~
 
 Enum's são tipos enumeradores.
-Eles servem, num geral, para salvar constantes.
+Eles servem, num geral, para atribuir constantes a variáveis específicas.
+Porém, em C#, Enum's não podem abrigar valores do tipo String ou Char.
+Aceita: sbyte, byte, ushort, short, uint, int, ulong e long.
+
+Eles são úteis para atribuir ordenadores ou identificadores, por exemplo.
+
+Para o caso de Strings, deve-se usar: Public static readonly string "nome_da_string".
+Não se recomenda o uso de constantes, pois constantes são incorporadas a todas as partes do código,
+enquanto o readonly string apenas apontará para onde existe a referência.
+
+Enum's aceitam modificadores como as classes. New, Public, Protected, Private e Internal são aceitos.
+
+~~~~  Aula 11 : TypeCast ~~~~
+
+O TypeCast é uma ferramenta para "conjurar" um tipo A a partir de um elemento do tipo B.
+
+A string "29384" pode ser conjurada para um int de vlor 29384, por exemplo.
+
+O compilador não é burro, então     
