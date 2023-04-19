@@ -205,4 +205,48 @@ O TypeCast é uma ferramenta para "conjurar" um tipo A a partir de um elemento d
 
 A string "29384" pode ser conjurada para um int de vlor 29384, por exemplo.
 
-O compilador não é burro, então     
+O compilador não é burro, então para que o TypeCast seja bem sucedido é necessário que a variável tenha uma estrutura
+condizente com o cast solicitado.
+
+~~~~  Aula 12, 13 e 14 : Condicional IF, If-Else e If Aninhado~~~~
+
+Um condicional If é uma expressão que necessita de um parâmetro com estrutura lógica para existir.
+
+Não existe, por exemplo, if(){}. O if pode ou não possuir um Else associado. Caso exista um if-else, a expressão é tratada
+de forma booleana e dois caminhos distintos podem ser tomados(ou até mesmo dois caminhos iguais).
+
+Existe o operador ternário ?: . O operador possui a seguinte estrutura:
+
+"condição" ? "Verdadeiro" : "Falso"
+Por exemplo:
+
+int i = 1;
+i < 20? "Pequeno" : "Grande" 
+A saída será Pequeno.
+
+O if pode ser colocado dentro de outros if's, como uma cascata de condições.
+
+Por exemplo:
+Int a=1, b=2, c=3, d=4;
+if(a==1){
+    Console.WriteLine("Imprimiu o 1);
+    if(b==2){
+        Console.WriteLine("Imprimiu o 2);
+        if(c==3){
+            Console.WriteLine("Imprimiu o 3);
+                if(d==4){
+                    Console.WriteLine("Imprimiu o 4);
+                        }
+                } 
+            }
+        }
+A ordem de execução é de fora para dentro, consequentemente a impressão será:
+Imprimiu o 1
+Imprimiu o 2
+Imprimiu o 3
+Imprimiu o 4
+
+Dessa mesma forma podem ser usados else's.
+
+~~~~  Aula 15 : Switch Case ~~~~
+
