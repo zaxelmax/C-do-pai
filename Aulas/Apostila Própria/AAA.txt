@@ -250,3 +250,24 @@ Dessa mesma forma podem ser usados else's.
 
 ~~~~  Aula 15 : Switch Case ~~~~
 
+O switch case é, assim como as extensões do If, uma estrutura que analisa uma condição e executa uma função a partir da análise.
+Diferentemente do If, que analisa se uma proposição ou um conjunto delas formam algo verdadeiro ou falso, o switch pode possuir 
+diversas análises em uma mesma estrutura.
+
+Sintaxe:
+Switch(Variável/Retorno)
+case : "a"{
+~execução
+break;
+}
+case : "b"{
+~execução
+break;
+}
+
+default {
+~execução
+    break;
+}
+
+O default ocorre quando nenhum dos casos anteriormente atribuidos retorna um true na verificação.
