@@ -299,3 +299,22 @@ ou mais informações. Os arrays representam espaços de memória guardados em c
 de modo que seu acesso ocorre a partir do índice no qual a informação está/deverá estar.
 
 Sintaxe: type "nomedoarray" = new type[array length]
+
+Arrays costumam ser percorridos ou carregados usando for e criando as variáveis
+de controle dentro do próprio for.
+As sintaxes para declaração de arrays podem ser variadas:
+
+type[] array  new type[size];
+type[] array = new type[]{elements}
+type[] array = {elements}
+type[,] matrix = new type[a,b]
+type[,] matrix = new type[,] {{1,2,3},{4,5,6}}
+type[][] jaggedarray = new type[size][]
+Nota: um jaggedarray é um array de arrays.
+
+O operador new cria e instancializa um objeto de 
+um determinado tipo. Ele separa um slot na memória
+e cria o objeto a partir das características indicadas.
+
+Existem alguns métodos que podem ser aplicados aos arrays: 
+System.Array.Copy(arraybase, alvodacópia, quantidade de elementos a serem copiados [int])

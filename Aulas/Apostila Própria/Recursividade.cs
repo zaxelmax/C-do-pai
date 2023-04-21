@@ -43,11 +43,8 @@ public class Apostila{
         //Naturais natural = new Naturais();
         //Console.WriteLine(natural.N(100000));
         string U = "carro";
-        char[] v = U.ToCharArray();
-        char[] troquei = new char[v.Length];
-      Strings comp = new Strings();
-      comp.inverte(v,troquei,v.Length);
-  
-
+    
+        PrintValues(U);
+    
     }
 }
