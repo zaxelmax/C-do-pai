@@ -271,3 +271,31 @@ default {
 }
 
 O default ocorre quando nenhum dos casos anteriormente atribuidos retorna um true na verificação.
+
+~~~~ Aula 16 : GO TO ~~~~
+
+O goto é utilizado para "saltar" na execução de um código.
+Como o próprio nome diz, ele vai saltar para uma linha indicada.
+A indicação dessa linha pode ocorrer antes ou depois do goto.
+
+Sintaxe: 
+
+Ponto de retorno:
+    Código a ser executado;
+
+goto
+    Ponto de retorno;
+
+O uso de goto não é recomendado, pois ele cria problemas nos padrões de projeto
+Um código que possui grande quantidade de goto não tem uma boa legibilidade, costuma
+apresentar bugs complcados de serem encontrados e não é consideravelmente rápido,
+como um código no qual as estruturas de fluxo de dados utilizadas são laços, como 
+o while ou o for.
+
+~~~~ Aula 17 : Arrays ~~~~
+
+Arrays ou vetores são entidades de programação com a capacidade de acumular uma
+ou mais informações. Os arrays representam espaços de memória guardados em conjunto,
+de modo que seu acesso ocorre a partir do índice no qual a informação está/deverá estar.
+
+Sintaxe: type "nomedoarray" = new type[array length]
