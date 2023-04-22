@@ -292,7 +292,7 @@ apresentar bugs complcados de serem encontrados e não é consideravelmente ráp
 como um código no qual as estruturas de fluxo de dados utilizadas são laços, como 
 o while ou o for.
 
-~~~~ Aula 17 : Arrays ~~~~
+~~~~ Aula 17 e 18: Arrays e Matrizes. ~~~~
 
 Arrays ou vetores são entidades de programação com a capacidade de acumular uma
 ou mais informações. Os arrays representam espaços de memória guardados em conjunto,
@@ -317,4 +317,17 @@ um determinado tipo. Ele separa um slot na memória
 e cria o objeto a partir das características indicadas.
 
 Existem alguns métodos que podem ser aplicados aos arrays: 
-System.Array.Copy(arraybase, alvodacópia, quantidade de elementos a serem copiados [int])
+System.Array.Copy(arraybase, alvodacópia, quantidade de elementos a serem copiados [int]).
+
+~~~~ Aulas 19,20,21,22 : For, While, Do While, Foreach. ~~~~
+
+Laços de repetição têm, num geral, infinitos usos.
+Eles podem ser utilizados para ler ou carregar arrays ou entrar em situações
+recursivas, podem ser usados em conjunto com condicionais, etc.
+
+O for é um laço interessante: suas variáveis de controle podem ser iniciadas na declaração
+do próprio for e terão como escopo apenas o que está dentro do próprio for.
+
+
+
+
