@@ -328,6 +328,34 @@ recursivas, podem ser usados em conjunto com condicionais, etc.
 O for é um laço interessante: suas variáveis de controle podem ser iniciadas na declaração
 do próprio for e terão como escopo apenas o que está dentro do próprio for.
 
+Sua sintaxe é: 
+for(type var;conditional expression using var;var iteration){
+    code;
+}
 
+Em type var temos:
+Declaração e inicialização da variável ou somente condição de inicialização da variável.
+Ele é executado somente uma vez, no momento em que o laço começará.
 
+Em conditional expression using var temos:
+Uma expressão de análise para saber se, após a primeira iteração, o for continuará sendo 
+executado. Ela quase sempre está associada à variável declarada em type var.
 
+Em var iteration temos:
+Após cada iteração completa, a operação representada será executada.
+Para que não exista um loop infinito, é necessário que a iteração
+seja condizente com aa condição.
+
+O While é um laço de repetição que não necessariamente executará a primeira ação.
+Ele é bom quando não se sabe quantas vezes a ação deve ser executada, mas
+sabe-se que a ação deve ser executada quando uma condição for satisfeita.
+
+Sua sintaxe é:
+while(conditional expression or method boolean return){
+    code;
+}
+O while pode ser aninhado com estruturas de controle de fluxo como:
+switch, if, else, do-while, etc.
+O while também pode ser parado com uma condição a partir do uso do break.
+Caso você precise pular a execução do código e executar a próxima iteração
+do mesmo while, pode-se utilizar a expressão continue.
