@@ -359,3 +359,7 @@ switch, if, else, do-while, etc.
 O while também pode ser parado com uma condição a partir do uso do break.
 Caso você precise pular a execução do código e executar a próxima iteração
 do mesmo while, pode-se utilizar a expressão continue.
+
+Do-While é um laço que irá obrigatoriamente iniciar uma execução.
+Consequentemente, depois da primeira execução deve existir um critério de 
+repetição, que será o while.
