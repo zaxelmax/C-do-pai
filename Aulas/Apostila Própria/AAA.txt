@@ -329,9 +329,10 @@ O for é um laço interessante: suas variáveis de controle podem ser iniciadas 
 do próprio for e terão como escopo apenas o que está dentro do próprio for.
 
 Sua sintaxe é: 
-for(type var;conditional expression using var;var iteration){
-    code;
-}
+
+    for(type var;conditional expression using var;var iteration){
+        code;
+    }
 
 Em type var temos:
 Declaração e inicialização da variável ou somente condição de inicialização da variável.
@@ -351,9 +352,10 @@ Ele é bom quando não se sabe quantas vezes a ação deve ser executada, mas
 sabe-se que a ação deve ser executada quando uma condição for satisfeita.
 
 Sua sintaxe é:
-while(conditional expression or method boolean return){
-    code;
-}
+
+    while(conditional expression or boolean method return){
+        code;
+    }
 O while pode ser aninhado com estruturas de controle de fluxo como:
 switch, if, else, do-while, etc.
 O while também pode ser parado com uma condição a partir do uso do break.
@@ -363,3 +365,85 @@ do mesmo while, pode-se utilizar a expressão continue.
 Do-While é um laço que irá obrigatoriamente iniciar uma execução.
 Consequentemente, depois da primeira execução deve existir um critério de 
 repetição, que será o while.
+Sua sintaxe é:
+    do{
+        code;
+    }while(condicional expression or boolean method return)
+
+
+O Foreach é ótimo, perfeito, lindo e coisa e tal para ler/escrever/modificar
+arrays, listas, dicionários, etc.
+Para cada elemento(ou par) presente na coleção o Foreach executará o código.
+
+Sua sintaxe é:
+
+    foreach(type variável in coleção){
+        code;
+    
+    }
+Não se pode esquecer que a variável analisada em type será utilizada dentro do foreach.
+
+~~~~ Aula 23 : Métodos para Arrays ~~~~
+
+---------------------------------------------------------------------------
+!!!!!!!!!Essa aula foi pulada, devo voltar daqui alguns semanas!!!!!!!!!!!!
+---------------------------------------------------------------------------
+
+~~~~Aula 24 : Métodos~~~~
+
+Métodos são, em qualquer linguagem de programação, uma estrutura de código 
+que realizará ou não operações e retornará ou não valores.
+Ela pode ou não receber parâmetros de entrada.
+
+                                                            Modificadores de Métodos
+______________________________________________________________________________________________________________________________________________                                                            
+||                                                                                                                                          ||
+||public: O método pode ser acessado por qualquer código em qualquer lugar.                                                                 ||                                                                 
+||                                                                                                                                          ||
+||private: O método só pode ser acessado dentro da classe em que foi declarado.                                                             ||
+||                                                                                                                                          ||
+||protected: O método só pode ser acessado dentro da classe em que foi declarado ou em uma classe derivada da classe em que foi declarado.  ||
+||                                                                                                                                          ||
+||internal: O método só pode ser acessado dentro do mesmo assembly (arquivo DLL ou EXE).                                                    ||
+||                                                                                                                                          ||
+||protected internal: O método só pode ser acessado dentro do mesmo assembly ou por classes derivadas da classe em que foi declarado.       ||
+||                                                                                                                                          ||
+||Modificador de Especificação                                                                                                              ||
+||                                                                                                                                          ||
+||static: O método é um membro estático da classe e pode ser chamado sem criar uma instância da classe.                                     ||
+||                                                                                                                                          ||
+||virtual: O método pode ser sobrescrito em uma classe derivada.                                                                            ||
+||                                                                                                                                          ||
+||override: O método sobrescreve o método de uma classe base.                                                                               ||    
+||                                                                                                                                          ||
+||abstract: O método não tem implementação na classe base e deve ser implementado em uma classe derivada.                                   ||
+||                                                                                                                                          ||
+||sealed: O método não pode ser sobrescrito em classes derivadas.                                                                           ||
+||                                                                                                                                          ||
+||Modificador de Parâmetro                                                                                                                  ||                        ||
+||                                                                                                                                          ||
+||ref: Passa o parâmetro por referência. Qualquer alteração no valor do parâmetro dentro do método é refletida na variável original que foi ||
+||passada como argumento.                                                                                                                   ||   
+||                                                                                                                                          ||
+||out: O parâmetro é usado para retornar um valor do método. O valor do parâmetro é indefinido no início do método e deve ser definido antes||
+||do método retornar.                                                                                                                       ||
+||                                                                                                                                          || 
+||params: Permite que um número variável de argumentos seja passado para o método como um único parâmetro.                                  ||
+||                                                                                                                                          ||
+||this: Referencia o objeto atual dentro do método.                                                                                         ||
+||                                                                                                                                          ||
+||Modificadores de Variável                                                                                                                 ||
+||                                                                                                                                          ||
+||const: A variável é uma constante e não pode ser modificada após ser atribuída um valor.                                                  ||
+||                                                                                                                                          ||
+||readonly: A variável só pode ser atribuída um valor uma vez, normalmente no construtor da classe. Depois de atribuído um valor, a variável|| 
+||se torna somente leitura.                                                                                                                 ||
+||                                                                                                                                          ||
+||volatile: A variável é armazenada na memória principal em vez de ser armazenada no cache do processador. Isso garante que o valor da var- ||
+||iável seja atualizado imediatamente em todos os threads que acessam a variável.                                                           ||    
+||                                                                                                                                          ||
+||unsafe: Permite que código não seguro acesse a memória diretamente.                                                                       ||                         
+||                                                                                                                                          ||
+||                                                                                                                                          ||
+______________________________________________________________________________________________________________________________________________
+
