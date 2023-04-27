@@ -447,3 +447,41 @@ ________________________________________________________________________________
 ||                                                                                                                                          ||
 ______________________________________________________________________________________________________________________________________________
 
+~~~~ Aula 25 : Passagem por valor e passagem por referência ~~~~
+
+Como foi visto no tópico passado, é possível utilizar ref como parâmetro do método.
+
+O uso de ref faz com que o parâmetro inserido seja enviado utilizando a referência dele e não seu valor, como 
+consequência as mudanças realizadas serão direcionadas à variável e não ao retorno /execução do método.
+
+~~~~ Aula 26 : Argumento out ~~~~
+
+O modificador out é usado para indicar que um parâmetro de método é uma saída ou um valor de retorno, ou seja,
+o valor do parâmetro será modificado dentro do método e a nova versão desse valor será retornada como resultado
+do método. Dessa forma, o out é usado para retornar vários valores de um método, em vez de apenas um.
+
+Sua sintaxe é:
+        [ modificadores de método ] nome.do.método(parametro a, parametro b, out result, out result1){
+            code;
+        }
+    O código deve atribuir valores para result e result 1 neste exemplo, consequentemente as variáveis associadas
+que serão enviadas como parâmetro do método terão seu valor alterado.
+
+~~~~ Aula 27 : Argumento Params ~~~~
+O argumento params faz com que o método seja capaz de receber uma quantidade de valores sem saber quantos serão informados.
+Por exemplo, se você tem um sistema de cadastro, mas não sabe quantos cadastros serão inseridos, o método de cadastro pode receber
+um argumento com params e será carregado conforme a quantidade de entradas receber.
+
+Sua sintaxe é:
+        [modificadores de método] nome.do.método(params type[] var){
+            code;
+        }
+
+~~~~ Aula 28 : Classes e Objetos ~~~~
+
+Classe é um conceito fundamental na programação orientada a objetos e em C# não é diferente.
+Uma classe é basicamente um modelo ou um molde que descreve a estrutura e o comportamento de um objeto. 
+Em outras palavras, ela define as propriedades, métodos e eventos que um objeto deve ter.
+Uma vez que temos uma classe definida, podemos criar objetos a partir dela. 
+
+    
