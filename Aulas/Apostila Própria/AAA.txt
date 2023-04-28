@@ -1,6 +1,6 @@
 Yo.
 Compilado de todos os conteúdos trabalhados até agora.
-Basicamente, todas as aulas serão separadas aqui e explcadas.
+Basicamente, todas as aulas serão separadas aqui e explicadas.
 O formato será:
 
 //Título da Aula
@@ -420,7 +420,7 @@ ________________________________________________________________________________
 ||                                                                                                                                          ||
 ||sealed: O método não pode ser sobrescrito em classes derivadas.                                                                           ||
 ||                                                                                                                                          ||
-||Modificador de Parâmetro                                                                                                                  ||                        ||
+||Modificador de Parâmetro                                                                                                                  ||
 ||                                                                                                                                          ||
 ||ref: Passa o parâmetro por referência. Qualquer alteração no valor do parâmetro dentro do método é refletida na variável original que foi ||
 ||passada como argumento.                                                                                                                   ||   
@@ -440,7 +440,7 @@ ________________________________________________________________________________
 ||se torna somente leitura.                                                                                                                 ||
 ||                                                                                                                                          ||
 ||volatile: A variável é armazenada na memória principal em vez de ser armazenada no cache do processador. Isso garante que o valor da var- ||
-||iável seja atualizado imediatamente em todos os threads que acessam a variável.                                                           ||    
+||iável seja atualizado imediatamente em todos os threads que acessam a variável.                                                           ||
 ||                                                                                                                                          ||
 ||unsafe: Permite que código não seguro acesse a memória diretamente.                                                                       ||                         
 ||                                                                                                                                          ||
@@ -484,4 +484,100 @@ Uma classe é basicamente um modelo ou um molde que descreve a estrutura e o com
 Em outras palavras, ela define as propriedades, métodos e eventos que um objeto deve ter.
 Uma vez que temos uma classe definida, podemos criar objetos a partir dela. 
 
-    
+Sua sintaxe é: 
+
+    [modificadores de classe] class nome.da.classe{
+        code;
+    }
+
+
+Em C#, um objeto é uma instância de uma classe. Ou seja, a classe é a definição e o objeto é a representação 
+concreta dessa definição em tempo de execução.
+
+Algumas informações importantes sobre objetos em C# incluem:
+
+Instanciação de objetos: para criar um objeto em C#, você deve primeiro criar uma instância da classe que o define. 
+Isso é feito usando a palavra-chave "new", seguida do nome da classe e parênteses vazios (se a classe não exigir 
+nenhum argumento de construtor).
+
+A sintaxe da instanciação de objetos é:
+    nome.da.classe nome.do.objeto = new nome.da.classe();
+Deve-se notar que o uso do new aloca na memória um espaço para um novo objeto ou struct.
+
+~~~~ Aulas 29 e 30 : Construtores, Destrutores e sobrecarga de construtores ~~~~
+
+Um construtor numa classe é um "corpo" que, a partir dos parâmetros inseridos, atribuirá valores ou estruturará
+métodos dentro de uma classe.
+A ideia de usar um construtor vem de um momento no qual não sabemos quais valores serão inseridos nos atributos
+da classe ou quando precisamos chamar um método que recebe parâmetros de valor não conhecido.
+
+Sua sintaxe é: 
+    nome.da.classe (type nome.do.parametro, type nome.do.parametro1){
+        code;
+    }
+
+A sobrecarga de construtores permite que um construtor de nomes iguais execute ou atribua valores completamente
+distintos de acordo com os parâmetros inseridos em sua execução.
+
+Pode ser utilizado da seguinte forma
+
+    construtorA(type1 a, type1 b, type2 c){
+        code;
+    }
+    construtorA(type2 d, type1 e, type3 f){
+        code;
+    }
+    construtorA(type4 a){
+        code;
+    }
+
+    O construtor A será chamado de acordo com os parâmetros inseridos, mesmo tendo nomes iguais.
+    Quaisquer erros na inserção dos parâmetros retornam o seguinte:
+    O construtor [...] não aceita nenhuma sobrecarga com os parâmetros [...].
+
+~~~~ Aula 31 : Classes Static ~~~~
+ Classes static são classes que não podem ser instanciadas e, por padrão, possuem métodos e membros static.
+As classes static não podem ter construtores públicos, pois não podem ser instanciadas. Em contrapartida, podem
+ser construídas com construtores privados dentro da própria classe.
+
+Todos os membros estáticos de uma classe static devem ser declarados como públicos.
+Classes static só podem herdar de classes static.
+As classes static são ótimas para fornecer funções e recursos
+úteis para todo o programa. Classes static podem manipular arrays, listas, structs
+ou guardar valores de gerenciamento, por exemplo.
+Em contrapartida, como não podem ser instanciadas não se podem criar objetos que possam ser
+passados como parâmetros ou armazenados.
+
+~~~~ Aula 32 : parâmetro This ~~~~
+
+O parâmetro this, em um método, serve para informar a referência de onde vem 
+o argumento e quem receberá a alteração/retorno.
+
+É útil em situações nas quais o código possui variáveis em escopos diferentes, mas com 
+nomes iguais. Deve-se lembrar, no entanto, que não se recomenda o uso de variáveis
+com nomes idênticos por causa de questões como legibilidade e depuração do código.
+
+~~~~ Aula 33 : Public vs Private ~~~~
+Sinceramente n entendi muito e não há inserção de conteúdo aqui.
+Next
+
+~~~~ Aula 34 : Heranças ~~~~
+
+Oraora, agora sim
+Herança é uma estrutura de código que visa reaproveitar características oriundas de uma ou mais classes.
+Não necessariamente toda classe poderá/deverá ser herdada e, no caso de classes muito grandes, deve-se tomar cuidado
+com os usos de herança.
+
+A classe que possui características a serem herdadas pode ser chamada de:
+Classe pai
+Superclasse
+Classe base
+
+A classe que herda características pode ser chamada de:
+Classe filha
+Subclasse
+Classe Derivada
+
+
+Os tipos de classes que podem ser herdadas são:
+Public
